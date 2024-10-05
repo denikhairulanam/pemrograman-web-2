@@ -8,6 +8,6 @@ class  orang {
     }
      
     public function ucapSalam (){
-        echo "halo perkenalkan nama saya " . $this ->nama . "<br>";
+        echo "halo perkenalkan nama saya  :" . $this ->nama . "<br>";
      }
 }

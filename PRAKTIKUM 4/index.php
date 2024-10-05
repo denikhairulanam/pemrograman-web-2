@@ -33,17 +33,17 @@
         echo"<br>";
 
         $mahasiswa = new mahasiswa();  
-        $mahasiswa ->setnama ('emely walker');
+        $mahasiswa ->setnama ('Deni Khairul Anam');
         $mahasiswa ->setnim ("701230058");
 
         $nilaimahasiswa =new nilai ();
         $nilaimahasiswa->setTugas (70);
-        $nilaimahasiswa->setUts (67);
-        $nilaimahasiswa->setUas(90);
+        $nilaimahasiswa->setUts(90);
+        $nilaimahasiswa->setUas (67);
 
         $mahasiswa->setnilai ($nilaimahasiswa);
 
-        $mhasiswa->ucapsalam(); 
+        $mahasiswa-> ucapSalam (); 
         $mahasiswa->tampilkandata();
         ?>
     </div>
