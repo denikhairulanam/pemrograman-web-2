@@ -8,20 +8,26 @@ class Home extends BaseController
     {
         return view('index');
     }
-    public function cart(): string
-    {
+
+    public function cart() {
         return view('cart');
+        
     }
-    public function serch(): string
-    {
-        return view('serch');
+    public function search() {
+        return view('search');
+        
     }
-    public function checkout(): string
-    {
+    public function checkout() {
         return view('checkout');
+        
     }
-    public function submit(): string
-    {
+    public function submit() {
         return view('submit');
+        
     }
+    public function image($file=null)
+    {
+        return $this->response->download(WRITEPATH .'uploads/images/'.$file,null);
+    }
+
 }
